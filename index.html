@@ -528,46 +528,7 @@ footer { background: var(--navy2); border-top: 3px solid var(--gold); }
   position: relative;
   overflow: hidden;
 }
-.hero-prophet-panel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  filter: brightness(0.7) saturate(0.85);
-  transition: transform 0.6s ease;
-}
-.hero-prophet-panel:hover img {
-  transform: scale(1.04);
-}
-/* Left panel: fade to right toward centre */
-#hp-left::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(11,29,58,0.55) 0%,
-    rgba(11,29,58,0.0) 60%,
-    rgba(11,29,58,0.6) 100%
-  );
-  pointer-events: none;
-  z-index: 1;
-}
-/* Right panel: fade to left toward centre */
-#hp-right::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to left,
-    rgba(11,29,58,0.55) 0%,
-    rgba(11,29,58,0.0) 60%,
-    rgba(11,29,58,0.6) 100%
-  );
-  pointer-events: none;
-  z-index: 1;
-}
+
 /* Top fade — blend into hero background above */
 .hero-prophets-fullwidth::before {
   content: '';
@@ -578,26 +539,7 @@ footer { background: var(--navy2); border-top: 3px solid var(--gold); }
   z-index: 3;
   pointer-events: none;
 }
-/* Bottom fade — blend into hero background below */
-.hero-prophets-fullwidth::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 100px;
-  background: linear-gradient(to top, var(--navy), transparent);
-  z-index: 3;
-  pointer-events: none;
-}
-/* Vertical gold divider between panels */
-.hero-prophet-panel#hp-left::before {
-  content: '';
-  position: absolute;
-  top: 10%; bottom: 10%;
-  right: 0;
-  width: 1px;
-  background: linear-gradient(to bottom, transparent, rgba(200,168,75,0.6), transparent);
-  z-index: 4;
-}
+
 .hp-overlay { display: none; }
 .hp-caption {
   position: absolute;
@@ -739,11 +681,11 @@ footer { background: var(--navy2); border-top: 3px solid var(--gold); }
     <div class="live-inner">
       <div class="live-badge-col">
         <div class="live-dot"><div class="live-pulse"></div>Acompanhe Ao Vivo</div>
-        <div class="live-title">OS PROFETAS DO SENHOR<br>VIRÃO AO AR</div>
+        <div class="live-title">OS PROFETAS DO SENHOR<br>NO AR</div>
         <div class="live-subtitle">Transmissão em directo não percas</div>
         <div class="live-horario">
-          <span>20h00 Angola</span>
-          <span>22h00 Quénia</span>
+          <span>UTC+1 Angola</span>
+          <span>UTC+3 Quénia</span>
         </div>
       </div>
       <div class="live-divider"></div>
